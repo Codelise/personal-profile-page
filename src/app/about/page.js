@@ -1,7 +1,7 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
-
+import Footer from "@/components/Footer";
 export default function About() {
   const searchParams = useSearchParams();
 
@@ -191,6 +191,7 @@ export default function About() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

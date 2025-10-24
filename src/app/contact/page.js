@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function Contact() {
   const [showSuccess, setShowSuccess] = useState(false);
@@ -24,7 +25,7 @@ export default function Contact() {
           </h2>
           <div className="max-w-2xl mx-auto">
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="flex flex-wrap gap-4 max-w-[480px]">
+              <div className="flex flex-wrap  gap-4 max-w-[480px]">
                 <div className="flex flex-col min-w-40 flex-1">
                   <p className="text-white text-base font-medium pb-2">Name</p>
                   <input
@@ -127,6 +128,7 @@ export default function Contact() {
           </div>
         </section>
       </main>
+      <Footer />
 
       {showSuccess && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fadeIn">
